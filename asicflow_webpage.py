@@ -7,13 +7,10 @@ from PIL import Image
 # streamlit run asicflow_webpage.py --server.fileWatcherType none
 
 # ------------------------------------------------------------- # 
-# DEFINE DATA DIRECTORIES
+# DEFINE DATA DIRECTORY
 
 # path to main directory with images (pngs) to plot on webpage
-DATA_DIR = Path('/media/cirfa/CIRFA_media/asicflow_demo/images_for_webpage')
-
-# path to main git directory of streamlit module
-WORK_DIR = Path('/home/cirfa/work/projects/asicflow/streamlit')
+DATA_DIR = Path('./image_database')
 
 # ------------------------------------------------------------- # 
 # ------------------------------------------------------------- # 
@@ -40,7 +37,7 @@ st.title('Near-real time automated sea ice mapping')
 st.header('Areas of interest', divider='blue')
 
 # define path to AOI overview map
-image_AOI_path = WORK_DIR / 'overview_AOIs.png'
+image_AOI_path = DATA_DIR / 'overview_AOIs.png'
 image_AOI = Image.open(image_AOI_path.as_posix())
 
 # display AOI map on webpage
