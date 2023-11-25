@@ -1,2 +1,6 @@
-streamlit
-pillow
+channels:
+        conda-forge
+        defaults
+dependencies:
+        streamlit
+        pillow
