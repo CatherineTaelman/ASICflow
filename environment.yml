@@ -1,6 +1,6 @@
 channels:
-        conda-forge
-        defaults
+  - conda-forge
+  - defaults
 dependencies:
-        streamlit
-        pillow
+  - streamlit 
+  - pillow
