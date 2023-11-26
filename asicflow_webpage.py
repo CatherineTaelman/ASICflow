@@ -25,12 +25,24 @@ st.set_page_config(
     menu_items={
         'Get help': None,
         'Report a bug': "mailto:catherine.c.taelman@uit.no",
-        'About': "CIRFA demo, more about CIRFA: https://cirfa.uit.no"
+        'About': "CIRFA demo showcasing automated sea ice mapping from Sentinel-1 imagery, more about CIRFA: https://cirfa.uit.no"
     }
 )
 
 # title
-st.title('Near-real time automated sea ice mapping')
+st.title('Automated sea ice mapping')
+
+# paragraph describing webpage
+st.markdown('''
+The Centre for Integrated Remote Sensing for Arctic Operations (CIRFA) was established to "_develop methods and technologies enabling improved remote sensing and monitoring capabilities for Arctic operations. A significant focus of the work in CIRFA has been devoted to the analysis and interpretation of synthetic aperture radar (SAR) data for sea ice classification._" 
+
+This webpage showcases the automated mapping of sea ice types from Sentinel-1 SAR imagery, using methods developed within CIRFA.
+
+The processing chain automatically retrieves the latest Sentinel-1 images for an area of interest. Every new image is first classified pixelwise into the classes _ice_ or _open water (OW)_ using a CNN. From the ice-water classification result, a sea ice concentration map is inferred. Pixels with a high sea ice concentration are subsequently classified into ice types using a Bayesian classifier. We distinguish the following ice types: new ice - young ice - level ice - deformed ice.
+
+''')
+
+st.text('Disclaimer: the sea ice maps on this page are generated automatically and have not been quality-checked!')
 
 # ------------------------------------------------------------- # 
 # show AOI map
