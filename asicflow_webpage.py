@@ -34,7 +34,7 @@ st.title('Automated sea ice mapping')
 
 # paragraph describing webpage
 st.markdown('''
-The Centre for Integrated Remote Sensing for Arctic Operations ([CIRFA](https://cirfa.uit.no)) was established to "_develop methods and technologies enabling improved remote sensing and monitoring capabilities for Arctic operations._" A significant focus of the work in CIRFA has been devoted to the analysis and interpretation of synthetic aperture radar (SAR) data for sea ice classification.
+The Centre for Integrated Remote Sensing for Arctic Operations ([CIRFA](https://cirfa.uit.no)) was established in 2015 to "_develop methods and technologies enabling improved remote sensing and monitoring capabilities for Arctic operations._" A significant focus of the work in CIRFA has been devoted to the analysis and interpretation of synthetic aperture radar (SAR) data for sea ice classification.
 
 This webpage showcases the automated mapping of sea ice types from Sentinel-1 SAR imagery, using methods developed within CIRFA.
 
