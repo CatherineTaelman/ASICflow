@@ -25,7 +25,7 @@ st.set_page_config(
     menu_items={
         'Get help': None,
         'Report a bug': "mailto:catherine.c.taelman@uit.no",
-        'About': "CIRFA demo showcasing automated sea ice mapping from Sentinel-1 imagery, more about CIRFA: https://cirfa.uit.no"
+        'About': "Final CIRFA demo showcasing automated sea ice mapping from Sentinel-1 imagery. November 2023.More about CIRFA: https://cirfa.uit.no. Webpage created and managed by Catherine Taelman."
     }
 )
 
