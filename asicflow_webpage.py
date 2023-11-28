@@ -39,7 +39,7 @@ The Centre for Integrated Remote Sensing for Arctic Operations ([CIRFA](https://
 This webpage showcases the automated mapping of sea ice types from Sentinel-1 SAR imagery, using methods developed within CIRFA.
 
 The processing chain automatically retrieves the latest Sentinel-1 images for an area of interest. Every new image is first classified pixelwise into the classes _ice_ or _open water (OW)_ using a convolutional neural network. From the ice-water classification result, a sea ice concentration map is inferred. Pixels with a high sea ice concentration are subsequently classified into ice types using a Bayesian classifier. We distinguish the following ice types: _new ice_ - _young ice_ - _level ice_ - _deformed ice_.
-
+Note that some of the algorithms used are still under development and hence artefacts can appear in the classification results. We are working hard on improving this!
 ''')
 
 st.markdown('Disclaimer: the sea ice maps on this page are generated automatically and have not been quality-checked!')
